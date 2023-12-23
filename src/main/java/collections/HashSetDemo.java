@@ -42,8 +42,9 @@ public void HashSetPractice(){
             System.out.println(i + "is there");
         }
         else {
-            System.out.println("");
+            System.out.println(" ");
         }
+        System.out.println();
     }
 
 }
