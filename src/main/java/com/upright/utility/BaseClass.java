@@ -51,7 +51,7 @@ String myBrowser;
 
       //  driver.navigate().to("https://uprightforum.tech");//it won't wait till the driver gets loaded
 
-        driver.navigate().to("https://s3.us-east-2.amazonaws.com/dhartipatel.click/MyProfile.html");
+        driver.navigate().to("http://dhartipatel.click.s3-website.us-east-2.amazonaws.com");
 
        Thread.sleep(3000);
         driver.navigate().back();
