@@ -1,4 +1,4 @@
-package variablesTypePackage;
+package javaPackages.variablesTypePackage;
 
 public class VariablesTypes {
 /* There are three types of variables:

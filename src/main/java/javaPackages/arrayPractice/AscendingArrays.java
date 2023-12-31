@@ -1,4 +1,4 @@
-package arrayPractice;
+package javaPackages.arrayPractice;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

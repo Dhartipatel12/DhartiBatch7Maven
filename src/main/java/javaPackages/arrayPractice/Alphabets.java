@@ -1,4 +1,4 @@
-package arrayPractice;
+package javaPackages.arrayPractice;
 
 public class Alphabets {
  // 1. Write a Program to print all alphabets from A to Z.

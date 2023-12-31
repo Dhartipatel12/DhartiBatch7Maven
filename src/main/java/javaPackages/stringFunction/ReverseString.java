@@ -1,4 +1,4 @@
-package stringFunction;
+package javaPackages.stringFunction;
 
 public class ReverseString {
 

@@ -1,11 +1,11 @@
-package StringFunction;
+package javaPackages.stringFunction;
 
 public class StringBuffer {
 
 
 public static void StringBuffer(){
 
-StringBuffer sb = new StringBuffer("Hello");
+StringBuffer sb = new StringBuffer();
 //sb.append("batch7");
     System.out.println(sb);
 //sb.insert (5,"Students");

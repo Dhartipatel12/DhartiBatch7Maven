@@ -1,4 +1,4 @@
-package arrayPractice;
+package javaPackages.arrayPractice;
 
 import loopDemo.EvenOddnumber;
 

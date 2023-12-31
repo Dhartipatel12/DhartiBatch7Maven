@@ -1,4 +1,4 @@
-package stringFunction;
+package javaPackages.stringFunction;
 
 public class ReverseString2 {
 //Take any String and validate that it is palindrome or not.
