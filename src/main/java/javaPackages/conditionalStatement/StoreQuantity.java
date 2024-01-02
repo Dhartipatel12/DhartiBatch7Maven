@@ -1,4 +1,4 @@
-package conditionalStatement;
+package javaPackages.conditionalStatement;
 
 public class StoreQuantity {
  /*   1.A shop gives discount of 10% if the quantity is more than 1000 unit .

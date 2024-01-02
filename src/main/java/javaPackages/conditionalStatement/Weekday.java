@@ -1,6 +1,6 @@
-package ConditionalStatement;
+package javaPackages.conditionalStatement;
 
-import java.time.DayOfWeek;
+//import java.time.DayOfWeek;
 import java.util.Scanner;
 
 public class Weekday {

@@ -1,6 +1,7 @@
 package collections;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class HashSetDemo {
 
@@ -9,8 +10,8 @@ public class HashSetDemo {
      HashSet does not follow insertion order
   */
 
-public void HashSetPractice(){
-    HashSet<String>cars = new HashSet<>();
+public void HashSetPractice() {
+    HashSet<String> cars = new HashSet<>();
 
     cars.add("Rickshaw");
     cars.add("Murir Tin");
@@ -20,7 +21,7 @@ public void HashSetPractice(){
     cars.add("Tomtom");
 
 
-    int carSize= cars.size();
+    int carSize = cars.size();
     System.out.println(carSize);
 
     System.out.println(cars);
@@ -30,6 +31,8 @@ public void HashSetPractice(){
 
     // Add integer value for set and try to use Collections class.
 
+    Set<Integer> Num = new HashSet<>();
+
     Num.add(1);
     Num.add(2);
     Num.add(13);
@@ -37,7 +40,7 @@ public void HashSetPractice(){
     Num.add(50);
     Num.add(61);
 
-    for(int i = 0;i<20; i ++){
+    for (int i = 1;i<20; i ++){
         if (Num.contains(i)){
             System.out.println(i + "is there");
         }

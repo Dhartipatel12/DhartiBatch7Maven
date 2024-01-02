@@ -1,4 +1,4 @@
-package arrayPractice;
+package javaPackages.arrayPractice;
 
 public class ArrayDemo {
 // Array can hold multiple elements.
