@@ -62,12 +62,13 @@ String myBrowser;
 
         String myCurrentURL = driver.getCurrentUrl();
         System.out.println(myCurrentURL);
+      //  System.out.println();
 
         String myTitle = driver.getTitle();
         System.out.println(myTitle);
 
 
-       // driver.manage().window().maximize();
+       //driver.manage().window().maximize();
 
     }
 
