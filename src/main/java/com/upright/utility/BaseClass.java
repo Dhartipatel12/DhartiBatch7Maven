@@ -51,7 +51,7 @@ String myBrowser;
 
       //  driver.navigate().to("https://uprightforum.tech");//it won't wait till the driver gets loaded
 
-        driver.navigate().to("http://dhartipatel.click.s3-website.us-east-2.amazonaws.com");
+        driver.navigate().to("http://dhartipatel.click.s3-website.us-east-2.amazonaws.com/");
 
        Thread.sleep(3000);
         driver.navigate().back();
@@ -62,7 +62,7 @@ String myBrowser;
 
         String myCurrentURL = driver.getCurrentUrl();
         System.out.println(myCurrentURL);
-      //  System.out.println();
+
 
         String myTitle = driver.getTitle();
         System.out.println(myTitle);
