@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
@@ -16,14 +17,18 @@ public class UprightForumSignUpPage {
 @Test // @Test Annotation
     public void browser() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\dpate\\OneDrive\\Documents\\ChromeDriver\\chromedriver-win64\\chromedriver.exe");
-        driver = new ChromeDriver();
+        driver = new ChromeDriver();//open the chrome driver
         driver.get("http://uprightforum.tech/registration/");
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(10,TimeUnit.SECONDS);
         driver.manage().window().maximize();
         Thread.sleep(1000);
-        WebElement username= driver.findElement(By.name("your-username"));
+/*WebElement for Username,Firstname,lastname,email,password,Confirm Password,
+ Select Type,Select Country, Click on Registration */
+        WebElement username= driver.findElement(By.xpath("/html/body/section/div/div/div/div/div/form/div/input"));
         username.sendKeys("DhartiPatel");
+       // Thread.sleep(1000);
+       // WebElement username = driver.findElement(By.xpath("//input[@name='your-username']"));
         Thread.sleep(1000);
         WebElement firstname = driver.findElement(By.name("your-first-name"));
         firstname.sendKeys("Dharti");
@@ -43,11 +48,11 @@ public class UprightForumSignUpPage {
         WebElement element = driver.findElement(By.xpath("/html/body/section/div/div/div/div/div/form/div[7]/select"));
         Select dropdown = new Select(element);
         dropdown.selectByVisibleText("Student");
-        Thread.sleep(2000);
-        dropdown.selectByIndex(2);
-        Thread.sleep(3000);
-        dropdown.selectByVisibleText("Employee");
-        Thread.sleep(4000);
+        Thread.sleep(1000);
+       // dropdown.selectByIndex(2);
+       // Thread.sleep(1000);
+       // dropdown.selectByVisibleText("Employee");
+       // Thread.sleep(1000);
         WebElement element1= driver.findElement(By.id("your-country"));
         Select select1 = new Select(element1);
         select1.selectByVisibleText("United States");
@@ -55,10 +60,23 @@ public class UprightForumSignUpPage {
         WebElement register= driver.findElement(By.xpath("/html/body/section/div/div/div/div/div/form/div[9]/button"));
         register.click();
         Thread.sleep(1000);
-
-     driver.close();
-
+ // click on button and we get an alert box.
 }
+@Test
+public void handlingAlert(){
+  String alertText = driver.switchTo().alert().getText();
+   // Assert.assertEquals(alertText,"username is already exist");
+    if (alertText.equalsIgnoreCase("Username is already exist")){
+        System.out.println("Attempting to create duplicate account");
+    }
+    driver.switchTo().alert().accept();//It will click ok or yes.
+    driver.switchTo().alert().dismiss();//It will click No, Not now or Ignore.
+    driver.switchTo().alert().sendKeys("Hello");
+    System.out.println(alertText);
 
-
+  /* How did you handle alert?
+     I have to switch to alert, then I use different methods like
+     gettext,accept,dismiss,Sendkeys.
+   */
+}
 }
