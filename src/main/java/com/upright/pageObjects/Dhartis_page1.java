@@ -29,7 +29,7 @@ public class Dhartis_page1 {
          String myprofileText = profileText.getText();//get the text from application.
          SoftAssert obj = new SoftAssert();
          obj.assertEquals(myprofileText, "My Profile");
-        Thread.sleep(1000);
+         Thread.sleep(1000);
 
         WebElement ProjectManagementToolTxt = driver.findElement(By.xpath("//input[@ id = 'Project Management and Bug tracking Tool']"));
         ProjectManagementToolTxt.sendKeys("Jira");
