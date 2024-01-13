@@ -2,6 +2,7 @@ package com.upright.pageObjects;
 
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -57,6 +58,7 @@ public class Dhartis_Page {
     // Selecting  traveling
     Thread.sleep(1000);
     driver.findElement(By.xpath("/html/body/doctype/b/input[2]")).click();
+
 
     //Selecting  Watching Movies
     driver.findElement(By.xpath("/html/body/doctype/b/input[3]")).click();
